@@ -16,7 +16,7 @@
               {{ $t("name") }}
             </h3>
             <UBadge
-              icon="circle:flags-lang-uk"
+              icon="circle-flags:lang-uk"
               variant="solid"
               size="md"
               color="neutral"

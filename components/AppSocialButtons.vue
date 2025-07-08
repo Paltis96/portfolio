@@ -27,7 +27,7 @@ const social = [
   },
   {
     name: "github",
-    icon: "iri:github-line",
+    icon: "ri:github-line",
     href: "https://github.com/Paltis96",
   },
 ];

@@ -13,7 +13,7 @@
           v-for="(locale, idx) in locales"
           :key="idx"
           :label="locale.code"
-          :icon="'circle:flags-lang-'+ locale.code"
+          :icon="'circle-flags:lang-'+ locale.code"
           color="neutral"
           variant="ghost"
           @click="setLocale(locale.code)"

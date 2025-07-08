@@ -6,7 +6,7 @@
       class="relative flex flex-col flex-1 lg:grid gap-x-8 gap-y-4 p-0 sm:p-0"
     >
       <div class="flex flex-col flex-1 items-start">
-        <NuxtImg width="600" height="400" densities="x1" :src="data.img" />
+        <NuxtImg class="h-[350px] object-cover" width="600" height="400" densities="x1" :src="data.img" loading="lazy"  />
         <div class="min-w-0 flex-1 flex flex-col p-4 sm:p-6">
           <div class="flex items-center gap-2 mb-2">
             <UBadge variant="subtle">{{ data.tag }}</UBadge>

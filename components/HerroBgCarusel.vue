@@ -13,6 +13,7 @@
           class="flex m-auto mr-2 size-[86px] md:size-[156px] rounded-lg bg-muted border border-default dark:shadow-lg"
         >
           <NuxtImg
+            loading="lazy"
             alt="wideangle"
             role="img"
             class="h-full w-full rounded-[inherit] object-cover"

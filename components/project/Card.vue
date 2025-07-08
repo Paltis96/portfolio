@@ -19,7 +19,7 @@
             class="relative inline-flex -space-x-px w-full mt-auto pt-4"
           >
             <UButton
-              v-show="data.demo ? true : false"
+              v-if="data.demo ? true : false"
               block
               :href="data.demo"
               target="_blank"
@@ -28,7 +28,7 @@
               label="Demo"
             />
             <UButton
-              v-show="data.source ? true : false"
+              v-if="data.source ? true : false"
               block
               :href="data.source"
               target="_blank"

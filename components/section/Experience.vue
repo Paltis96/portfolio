@@ -1,20 +1,19 @@
 <template>
   <SectionWrapper :title="$t('title-experience')">
-    
-    <UTabs color="neutral" :items="items" class="lg:w-1/2">
+    <UTabs color="neutral" :items="items" class="lg:w-2/3">
       <template #work>
         <div class="p-4 bg-elevated/50 ring ring-default rounded-lg">
-          <UTimeline  :items="work" class="w-full mt-2">
+          <UTimeline :items="work" class="w-full mt-2">
             <template #date="{ item }">
               {{ item.datelocal[localeProperties.code] }}
             </template>
             <template #description="{ item }">
               <ul class="list-disc ml-4">
                 <li
-                  v-for="(v, idx) in item.descriptions[localeProperties.code]"
+                  v-for="(descr, idx) in item.descriptions[localeProperties.code]"
                   :key="idx"
                 >
-                  {{ v }}
+                  {{ descr }}
                 </li>
               </ul>
             </template>

@@ -17,22 +17,22 @@
 const items = [
   {
     name: "Python",
-    icon: "i-simple-icons-python",
+    icon: "simple:icons-python",
     tag: "Programming",
   },
   {
     name: "JavaScript",
-    icon: "i-simple-icons-javascript",
+    icon: "simple:icons-javascript",
     tag: "Programming",
   },
   {
     name: "TypeScript",
-    icon: "i-simple-icons-typescript",
+    icon: "simple:icons-typescript",
     tag: "Programming",
   },
   {
     name: "Geopandas",
-    icon: "i-simple-icons-geopandas",
+    icon: "simple:icons-geopandas",
     tag: "Programming",
   },
   {
@@ -42,7 +42,7 @@ const items = [
   },
   {
     name: "GDAL",
-    icon: "i-simple-icons-gdal",
+    icon: "simple:icons-gdal",
     tag: "GIS Libraries",
   },
   {
@@ -77,52 +77,52 @@ const items = [
   },
   {
     name: "PostgreSQL",
-    icon: "i-simple-icons-postgresql",
+    icon: "simple:icons-postgresql",
     tag: "Databases",
   },
   {
     name: "MySQL",
-    icon: "i-simple-icons-mysql",
+    icon: "simple:icons-mysql",
     tag: "Databases",
   },
   {
     name: "DuckDB",
-    icon: "i-simple-icons-duckdb",
+    icon: "simple:icons-duckdb",
     tag: "Databases",
   },
   {
     name: "BigQuery",
-    icon: "i-simple-icons-googlebigquery",
+    icon: "simple:icons-googlebigquery",
     tag: "Databases",
   },
   {
     name: "FastAPI",
-    icon: "i-simple-icons-fastapi",
+    icon: "simple:icons-fastapi",
     tag: "Web Development",
   },
   {
     name: "React",
-    icon: "i-simple-icons-react",
+    icon: "simple:icons-react",
     tag: "Web Development",
   },
   {
     name: "Vue",
-    icon: "i-simple-icons-vuedotjs",
+    icon: "simple:icons-vuedotjs",
     tag: "Web Development",
   },
   {
     name: "Leaflet.js",
-    icon: "i-simple-icons-leaflet",
+    icon: "simple:icons-leaflet",
     tag: "Web Development",
   },
   {
     name: "Mapbox",
-    icon: "i-simple-icons-mapbox",
+    icon: "simple:icons-mapbox",
     tag: "Web Development",
   },
   {
     name: "Cesium.js",
-    icon: "i-simple-icons-cesium",
+    icon: "simple:icons-cesium",
     tag: "Web Development",
   },
   {
@@ -132,17 +132,17 @@ const items = [
   },
   {
     name: "QGIS",
-    icon: "i-simple-icons-qgis",
+    icon: "simple:icons-qgis",
     tag: "Tools & Platforms",
   },
   {
     name: "ArcGIS",
-    icon: "i-simple-icons-arcgis",
+    icon: "simple:icons-arcgis",
     tag: "Tools & Platforms",
   },
   {
     name: "Azure",
-    icon: "i-simple-icons-microsoftazure",
+    icon: "simple:icons-microsoftazure",
     tag: "Tools & Platforms",
   },
 ];

@@ -23,7 +23,7 @@
               block
               :href="data.demo"
               target="_blank"
-              icon="i-lucide-laptop"
+              icon="lucide:laptop"
               variant="subtle"
               label="Demo"
             />
@@ -32,7 +32,7 @@
               block
               :href="data.source"
               target="_blank"
-              icon="i-lucide-github"
+              icon="lucide:github"
               color="neutral"
               variant="subtle"
               label="Source"

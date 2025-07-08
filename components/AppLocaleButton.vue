@@ -1,7 +1,7 @@
 <template>
   <UPopover>
     <UButton
-      icon="i-lucide-languages"
+      icon="lucide:languages"
       color="neutral"
       variant="ghost"
       size="xl"
@@ -13,7 +13,7 @@
           v-for="(locale, idx) in locales"
           :key="idx"
           :label="locale.code"
-          :icon="'i-circle-flags-lang-'+ locale.code"
+          :icon="'circle:flags-lang-'+ locale.code"
           color="neutral"
           variant="ghost"
           @click="setLocale(locale.code)"

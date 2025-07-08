@@ -16,7 +16,7 @@
             :label="item.name"
           />
           <UButton
-            icon="i-lucide-file"
+            icon="lucide:file"
             color="neutral"
             variant="ghost"
             size="xl"

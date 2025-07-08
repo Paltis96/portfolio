@@ -22,12 +22,12 @@
 const social = [
   {
     name: "linkedin",
-    icon: "i-ri-linkedin-line",
+    icon: "ri:linkedin-line",
     href: "https://www.linkedin.com/in/dkovshun/",
   },
   {
     name: "github",
-    icon: "i-ri-github-line",
+    icon: "iri:github-line",
     href: "https://github.com/Paltis96",
   },
 ];

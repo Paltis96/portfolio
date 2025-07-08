@@ -16,7 +16,7 @@
               {{ $t("name") }}
             </h3>
             <UBadge
-              icon="i-circle-flags-lang-uk"
+              icon="circle:flags-lang-uk"
               variant="solid"
               size="md"
               color="neutral"
@@ -46,7 +46,7 @@
                 class="hover:cursor-pointer"
                 :label="$t('menu-resume')"
                 size="xl"
-                icon="i-lucide-file"
+                icon="lucide:file"
                 :href="cv"
                 target="_blank"
               />

@@ -45,11 +45,6 @@
 </template>
 
 <script setup lang="ts">
-interface Translation {
-  uk: string;
-  en: string;
-}
-
 interface Card {
   title: string;
   img: string;

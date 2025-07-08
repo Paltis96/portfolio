@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-[calc(100%-58px)] md:min-h-[calc(100%-92px)] lg:min-h-[calc(100%-142px)] pt-[62px]"
+    class="min-h-[calc(100%-58px)] md:min-h-[calc(100%-92px)] lg:min-h-[calc(100%-142px)] lg:pt-[62px]"
   >
     <div
       class="w-full container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:grid gap-16 sm:gap-y-24 py-10 sm:py-20 lg:py-20"

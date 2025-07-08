@@ -1,0 +1,17 @@
+{
+  "menu-home": "Home",
+  "menu-projects": "Projects",
+  "menu-resume": "Resume",
+  "name": "Denys Kovshun",
+  "location": "Kyiv region, Ukraine",
+  "hero-title": "Fullstack GIS developer",
+  "hero-subtitle": "Skilled in building ELT pipelines for large-scale geospatial data, optimizing spatial databases, and developing web-based GIS applications that drive decision-making and operational efficiency.",
+  "open-work": "Open to work",
+  "title-experience": "Experience",
+  "title-tech-stack": "Tech Stack",
+  "title-projects": "Projects",
+  "tabs-experience-work":"Work",
+  "tabs-experience-educarion":"Educarion",
+  "project-title":"Projects",
+  "project-subtitle":"Demos, data analysis and real world applications developed in my spare time."
+}

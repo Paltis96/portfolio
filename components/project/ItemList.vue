@@ -12,16 +12,15 @@
 defineProps<{ limit?: boolean }>();
 const projects = [
   {
-    title: "Serverless Web GIS",
-    description: "111",
+    title: "Powerful platform for analyzing spatial data in the browser.",
     img: "/thumbnail-images/web-gis.png",
     demo: "https://dev-maps-f0cff.web.app/",
+    tag: "PoC",
   },
   {
-    title: "Industrial zones conversion",
-    description: "111",
+    title: "Repurposing of industrial zones for residential development",
     img: "/thumbnail-images/prom-zome.png",
-
+    tag: "Data viz",
   }
 ];
 </script>

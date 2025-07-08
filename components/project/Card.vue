@@ -9,38 +9,33 @@
         <div class="relative mb-0 aspect-video">
           <NuxtImg width="600" height="338" :src="data.img" />
         </div>
-
-        <div class="flex-1 p-4 h-[105px]">
-          <div
-            class="text-base text-pretty font-semibold text-highlighted flex items-center w-full"
-          >
-            <div class="w-full grid grid-cols-[1fr_auto] items-center gap-2">
-              <p class="truncate m-0">{{ data.title }}</p>
-              <div class="flex shrink-0 gap-1" />
-            </div>
+        
+        <div class="min-w-0 flex-1 flex flex-col p-4 sm:p-6">
+          <div class="flex items-center gap-2 mb-2">
+            <UBadge
+              variant="subtle"
+              >{{ data.tag }}</UBadge
+            >
           </div>
-          <div class="text-[15px] text-pretty text-muted mt-1 line-clamp-2">
-            {{ data.description }}
-          </div>
-        </div>
-        <div class="pt-4 mt-0 px-4 pb-4 w-full">
+          <h2 class="text-xl text-pretty font-semibold text-highlighted">
+            {{ data.title }}
+          </h2>
           <UButtonGroup
             size="lg"
-            class="relative inline-flex -space-x-px w-full"
+            class="relative inline-flex -space-x-px w-full mt-auto pt-4"
           >
             <UButton
+              v-show="data.demo ? true : false"
               block
               :href="data.demo"
-              :disabled="data.demo ? false : true"
               target="_blank"
               icon="i-lucide-laptop"
-              color="neutral"
               variant="subtle"
               label="Demo"
             />
             <UButton
+              v-show="data.source ? true : false"
               block
-              :disabled="data.source ? false : true"
               :href="data.source"
               target="_blank"
               icon="i-lucide-github"
@@ -57,16 +52,15 @@
 
 <script setup lang="ts">
 interface Translation {
-    uk:string,
-    en:string
+  uk: string;
+  en: string;
 }
 
 interface Card {
   title: string;
-  description: string;
   img: string;
   date?: string;
-  tags?: string[];
+  tag?: string;
   source?: string;
   demo?: string;
 }

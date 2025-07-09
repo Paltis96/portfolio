@@ -1,5 +1,5 @@
 <template>
-  <SectionWrapper :title="$t('title-tech-stack')" bg-class="bg-elevated/50">
+  <SectionWrapper :title="$t('section.tech-stack')" bg-class="bg-elevated/50">
     
     <div class="flex min-h-6 gap-4 flex-wrap lg:max-w-2/3" >
       <div

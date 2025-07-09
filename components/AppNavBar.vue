@@ -8,7 +8,7 @@
           <UButton
             v-for="item in navigation"
             :key="item.name"
-            :to="item.to"
+            :to="localePath(item.to)"
             color="neutral"
             variant="ghost"
             size="xl"
@@ -21,7 +21,7 @@
             variant="ghost"
             size="xl"
             class="rounded-full hover:bg-accented"
-            :label="$t('menu-resume')"
+            :label="$t('navigation.resume')"
             :href="cv"
             target="_blank"
           />
@@ -36,10 +36,11 @@
 <script setup lang="ts">
 import cv from "~/public/files/D. Kovshun CV 2025.pdf";
 const { t } = useI18n();
-const navigation = [
-  { name: t("menu-home"), to: "/" },
-  { name: t("menu-projects"), to: "/projects" },
-];
+const localePath = useLocalePath();
+const navigation = computed(() => [
+  { name: t("navigation.home"), to: "index" },
+  { name: t("navigation.projects"), to: "projects" },
+]);
 </script>
 
 <style lang="scss" scoped></style>

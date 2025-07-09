@@ -1,5 +1,5 @@
 <template>
-  <SectionWrapper :title="$t('title-projects')" >
+  <SectionWrapper :title="$t('section.projects')" >
     <ProjectItemList limit />
     <UButton
       trailing-icon="lucide:arrow-right"

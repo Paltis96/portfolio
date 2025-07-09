@@ -10,11 +10,11 @@
           <h1
             class="text-5xl text-pretty tracking-tight font-bold text-highlighted sm:text-5xl"
           >
-            {{ $t("project-title") }}
+            {{ $t("project.title") }}
           </h1>
-          <div class="text-lg sm:text-xl/8 text-muted text-balance mt-6">
-            {{ $t("project-subtitle") }}
-          </div>
+          <!-- <div class="text-lg sm:text-xl/8 text-muted text-balance mt-6">
+            {{ $t("project.subtitle") }}
+          </div> -->
         </div>
       </div>
     </div>

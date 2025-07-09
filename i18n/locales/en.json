@@ -1,17 +1,96 @@
 {
-  "menu-home": "Home",
-  "menu-projects": "Projects",
-  "menu-resume": "Resume",
-  "name": "Denys Kovshun",
-  "location": "Kyiv region, Ukraine",
-  "hero-title": "Fullstack GIS developer",
-  "hero-subtitle": "Skilled in building ELT pipelines for large-scale geospatial data, optimizing spatial databases, and developing web-based GIS applications that drive decision-making and operational efficiency.",
+  "navigation": {
+    "home": "Home",
+    "projects": "Projects",
+    "resume": "Resume"
+  },
+  "hero": {
+    "name": "Denys Kovshun",
+    "location": "Kyiv region, Ukraine",
+    "title": "Fullstack GIS developer",
+    "subtitle": "Skilled in building ELT pipelines for large-scale geospatial data, optimizing spatial databases, and developing web-based GIS applications that drive decision-making and operational efficiency."
+  },
   "open-work": "Open to work",
-  "title-experience": "Experience",
-  "title-tech-stack": "Tech Stack",
-  "title-projects": "Projects",
-  "tabs-experience-work":"Work",
-  "tabs-experience-educarion":"Education",
-  "project-title":"Projects",
-  "project-subtitle":"Demos, data analysis and real world applications developed in my spare time."
+  "section": {
+    "experience": "Experience",
+    "tech-stack": "Tech Stack",
+    "projects": "Projects"
+  },
+  "tabs-experience": {
+    "work": "Work",
+    "educarion": "Education"
+  },
+  "project": {
+    "title": "Projects",
+    "subtitle": ""
+  },
+   "educarion": [
+    {
+      "title": "National University of Life and Environmental Sciences of Ukraine",
+      "description": "Law",
+      "avatar": "/education-avatars/nubip.jpeg"
+    },
+    {
+      "title": "National University of Life and Environmental Sciences of Ukraine",
+      "description": "Geodesy and land management",
+      "avatar": "/education-avatars/nubip.jpeg"
+    }
+  ],
+  "work": [
+    {
+      "title": "Full Stack GIS Developer – JetSoftPro",
+      "date": "Jan 2025 – Present",
+      "descriptions": [
+        "Automated cultivation and maintenance workflows for agricultural fields.",
+        "Designed and developed web-based mapping tools for field management and route optimization.",
+        "Built a custom vector tiles generation and management service to support scalable map rendering."
+      ],
+      "avatar": "/work-avatars/jsp.jpeg"
+      
+    },
+    {
+      "title": "GIS Analyst – Zoniq",
+      "date": "Nov 2023 – Nov 2024",
+      "descriptions": [
+        "Developed analytic solutions to identify profitable EV charger locations.Led geospatial data collection and ELT pipeline development.",
+        "Built scouting and site evaluation algorithms for EV infrastructure planning.",
+        "Optimized infrastructure and services for enhanced data processing efficiency."
+      ],
+      "avatar":  "/work-avatars/zoniq.jpeg"
+      
+    },
+    {
+      "title": "Backend GIS Developer – Jito",
+      "date": "Nov 2022 – Nov 2023",
+      "descriptions": [
+        "Worked with global property databases using machine vision and deep learning.",
+        "Designed ELT pipelines and optimized geospatial databases.",
+        "Developed services for high-volume geospatial data processing and web app prototypes."
+      ],
+      "avatar":"/work-avatars/jito.jpeg"
+      
+    },
+    {
+      "title": "Full Stack GIS Developer – Upwork",
+      "date": "Jul 2022 – Nov 2022",
+      "descriptions": [
+        "Interfaced with clients to estimate tasks and select technologies.",
+        "Developed serverless web GIS, routing services, and desktop GIS apps.",
+        "Integrated geospatial tools into existing client platforms."
+      ],
+      "avatar": "/work-avatars/upwork.jpeg"
+      
+    },
+    {
+      "title": "GIS Analyst / Developer – M4U Estate",
+      "date": "Nov 2020 – Nov 2022",
+      "descriptions": [
+        "Delivered spatial analytics for real estate development and sales.",
+        "Built and maintained geospatial databases and ELT pipelines.",
+        "Developed network analysis tools and interactive web maps for client insights."
+      ],
+      "avatar":"/work-avatars/m4u.jpeg"
+      
+    }
+  ]
 }

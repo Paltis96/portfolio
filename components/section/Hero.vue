@@ -6,6 +6,7 @@
         <div class="flex items-center justify-center lg:mt-0 gap-4">
           <NuxtImg
             src="/avatar.png"
+            sizes="100"
             class="size-16 lg:size-25 rounded-full shadow-xl"
           />
           <div class="relative">
@@ -13,7 +14,7 @@
               class="bg-[var(--ui-bg)]/50 absolute top-0 left-0 w-full h-full z-0 blur-xl"
             />
             <h3 class="text-highlighted relative font-bold text-xl mb-1">
-              {{ $t("name") }}
+              {{ $t("hero.name") }}
             </h3>
             <UBadge
               icon="circle-flags:lang-uk"
@@ -22,7 +23,7 @@
               color="neutral"
               class="relative"
             >
-              {{ $t("location") }}</UBadge
+              {{ $t("hero.location") }}</UBadge
             >
           </div>
         </div>
@@ -38,13 +39,13 @@
             developer
           </h1>
           <p class="text-lg text-muted mt-6 text-balance">
-            {{ $t("hero-subtitle") }}
+            {{ $t("hero.subtitle") }}
           </p>
           <div class="mt-10 flex flex-col items-center justify-center gap-y-6">
             <div class="flex gap-x-6">
               <UButton
                 class="hover:cursor-pointer"
-                :label="$t('menu-resume')"
+                :label="$t('navigation.resume')"
                 size="xl"
                 icon="lucide:file"
                 :href="cv"

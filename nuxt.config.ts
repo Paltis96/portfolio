@@ -21,9 +21,9 @@ export default defineNuxtConfig({
     },
     defaultLocale: 'en',
   }, icon: {
-    // serverBundle: {
-    //   collections: ['lucide', 'ri', 'simple-icons', "circle-flags"]
-    // },
+    serverBundle: {
+      collections: ['lucide', 'ri', 'simple-icons', "circle-flags"]
+    },
     clientBundle: {
       icons: [
         "lucide:moon",

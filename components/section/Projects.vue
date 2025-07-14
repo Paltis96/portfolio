@@ -1,5 +1,5 @@
 <template>
-  <SectionWrapper :title="$t('section.projects')" >
+  <SectionWrapper :title="$t('section.projects')">
     <ProjectItemList limit />
     <UButton
       trailing-icon="lucide:arrow-right"
@@ -7,7 +7,7 @@
       size="xl"
       label="See all projects"
       variant="link"
-      to="/projects"
+      :to="$localePath('/projects')"
     />
   </SectionWrapper>
 </template>

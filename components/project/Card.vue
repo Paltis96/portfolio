@@ -9,7 +9,7 @@
         <NuxtImg class="lg:h-[350px] object-cover" width="600" height="400" densities="x1" :src="data.img" loading="lazy"  />
         <div class="min-w-0 flex-1 flex flex-col p-4 sm:p-6">
           <div class="flex items-center gap-2 mb-2">
-            <UBadge variant="subtle">{{ data.tag }}</UBadge>
+            <UBadge v-for="(t, idx) in data.tags" :key="idx" variant="subtle">{{ t }}</UBadge>
           </div>
           <h2 class="text-xl text-pretty font-semibold text-highlighted">
             {{ data.title }}
@@ -49,7 +49,7 @@ interface Card {
   title: string;
   img: string;
   date?: string;
-  tag?: string;
+  tags?: string[];
   source?: string;
   demo?: string;
 }

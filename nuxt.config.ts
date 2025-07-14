@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-icons',
     '@nuxtjs/i18n',
-    'nuxt-aos'
+    'nuxt-aos',
+    '@nuxt/content'
   ],
   css: ['~/assets/css/main.css'],
   i18n: {

@@ -58,7 +58,4 @@ const educarion = computed(() =>
     };
   })
 );
-onMounted(() => {
-  console.log(educarion.value);
-});
 </script>

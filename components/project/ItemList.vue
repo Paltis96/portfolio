@@ -21,7 +21,9 @@ const projects = [
     title: "Repurposing of industrial zones for residential development",
     img: "/thumbnail-images/prom-zome.png",
     tag: "Data viz",
-  }
+    demo: "https://data-viz-prom-zones.netlify.app",
+    source: "https://github.com/Paltis96/data-viz-prom-zones",
+  },
 ];
 </script>
 

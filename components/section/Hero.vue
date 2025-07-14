@@ -3,11 +3,11 @@
     <HerroBgCarusel />
     <div class="relative isolate px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-18 lg:py-48">
-        <div class="flex items-center justify-center lg:mt-0 gap-4 ">
+        <div class="flex items-center justify-center lg:mt-0 gap-4">
           <NuxtImg
             src="/avatar.png"
             sizes="100"
-            class="size-16 lg:size-25 rounded-full shadow-xl bg-zinc-900 ring-1 ring-zinc-700"
+            class="size-16 lg:size-25 rounded-full shadow-xl bg-zinc-100 dark:bg-zinc-900 ring-1 ring-zinc-200 dark:ring-zinc-700"
           />
           <div class="relative">
             <div
@@ -32,10 +32,7 @@
             class="text-5xl sm:text-7xl text-pretty tracking-tight font-bold text-highlighted mt-8"
           >
             Fullstack
-            <span
-              class="text-primary"
-              >GIS</span
-            >
+            <span class="text-primary">GIS</span>
             developer
           </h1>
           <p class="text-lg text-muted mt-6 text-balance">

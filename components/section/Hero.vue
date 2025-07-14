@@ -7,7 +7,7 @@
           <NuxtImg
             src="/avatar.png"
             sizes="100"
-            class="size-16 lg:size-25 rounded-full shadow-xl bg-zinc-100 dark:bg-zinc-900 ring-1 ring-zinc-200 dark:ring-zinc-700"
+            class="size-16 lg:size-25 rounded-full shadow-xl bg-gray-100 dark:bg-gray-900 ring-1 ring-gray-200 dark:ring-gray-700"
           />
           <div class="relative">
             <div

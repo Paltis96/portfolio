@@ -22,6 +22,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'Portfolio: Projects',
+})
+</script>
 
-<style scoped></style>

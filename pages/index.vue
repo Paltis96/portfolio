@@ -7,6 +7,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: 'Portfolio: Home',
+})
 
-<style lang="scss" scoped></style>
+</script>
+

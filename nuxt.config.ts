@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      title: 'Portfolio', // default fallback title
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+
+    }
+  },
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: [
@@ -30,7 +37,7 @@ export default defineNuxtConfig({
         "lucide:moon",
         "lucide:sun",
         "circle-flags:lang-uk",
-        "circle-flags:lang-uk",
+        "circle-flags:lang-en",
         "lucide:file",
         "lucide:arrow-right",
         "simple-icons:python",

@@ -59,5 +59,5 @@
 </template>
 
 <script setup>
-import cv from "~/public/files/D. Kovshun CV 2025.pdf";
+import cv from "../public/files/D. Kovshun CV 2025.pdf";
 </script>

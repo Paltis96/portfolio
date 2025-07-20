@@ -35,9 +35,9 @@
             <span class="text-primary">GIS</span>
             developer
           </h1>
-          <p class="text-lg text-muted mt-6 text-balance">
+          <h2 class="text-lg text-muted mt-6 text-balance">
             {{ $t("hero.subtitle") }}
-          </p>
+          </h2>
           <div class="mt-10 flex flex-col items-center justify-center gap-y-6">
             <div class="flex gap-x-6">
               <UButton

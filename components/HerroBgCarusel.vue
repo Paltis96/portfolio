@@ -14,7 +14,6 @@
         >
           <NuxtImg
             loading="lazy"
-            alt="wideangle"
             role="img"
             class="h-full w-full rounded-[inherit] object-cover"
             :src="`/map-images/maps/maps_${i + 1}.webp`"
@@ -31,7 +30,6 @@
           class="flex m-auto mr-2 size-[86px] md:size-[156px] rounded-lg bg-muted border border-default dark:shadow-lg"
         >
           <NuxtImg
-            alt="wideangle"
             role="img"
             class="h-full w-full rounded-[inherit] object-cover"
             :src="`/map-images/analysis/analysis_${i + 1}.webp`"

@@ -2,9 +2,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Portfolio', // default fallback title
+      title: 'Portfolio', 
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-
     }
   },
   compatibilityDate: '2025-05-15',
@@ -17,7 +16,9 @@ export default defineNuxtConfig({
     'nuxt-icons',
     '@nuxtjs/i18n',
     'nuxt-aos',
-    '@nuxt/content'
+    '@nuxt/content',
+    "@nuxtjs/robots",
+    "@nuxtjs/sitemap"
   ],
   css: ['~/assets/css/main.css'],
   i18n: {

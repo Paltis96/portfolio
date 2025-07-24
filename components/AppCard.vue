@@ -31,8 +31,8 @@
           class="font-medium inline-flex items-center text-xs px-2 py-1 gap-1 rounded-md bg-primary/10 text-primary ring ring-inset ring-primary/25"
           ><span class="truncate">{{ tag }}</span></span
         >
-        <!-- <div class="text-sm text-muted">
-              {{ post.date }}</div> -->
+        <div class="text-sm text-muted">
+              {{ post.date }}</div>
       </div>
       <h2 class="text-xl text-pretty font-semibold text-highlighted">
         {{ post.title }}

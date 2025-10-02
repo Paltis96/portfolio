@@ -1,6 +1,6 @@
 <template>
   <div class="max-sm:w-full max-sm:h-screen">
-    <!-- <HerroBgCarusel /> -->
+    <HerroBgCarusel />
     <div class="relative isolate px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-18 lg:py-48">
         <div class="flex items-center justify-center lg:mt-0 gap-4">

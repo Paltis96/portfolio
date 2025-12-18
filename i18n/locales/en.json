@@ -37,9 +37,20 @@
     }
   ],
   "work": [
+        {
+      "title": "Front-end GIS Developer – Luxoft",
+      "date": "Jan 2025 – Present",
+      "descriptions": [
+        "Developed interactive web mapping applications using React and Open Layers.",
+        "Implemented responsive design principles to ensure optimal user experience across devices.",
+        "Collaborated with back-end developers to integrate GIS services and APIs."
+      ],
+      "avatar": "/work-avatars/luxoft_logo.jpeg"
+      
+    },
     {
       "title": "Full Stack GIS Developer – JetSoftPro",
-      "date": "Jan 2025 – Present",
+      "date": "Jan-2025 – Nov 2025",
       "descriptions": [
         "Automated cultivation and maintenance workflows for agricultural fields.",
         "Designed and developed web-based mapping tools for field management and route optimization.",

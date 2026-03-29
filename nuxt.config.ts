@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Portfolio', 
+      title: 'Portfolio',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     }
   },
@@ -60,7 +60,10 @@ export default defineNuxtConfig({
         "simple-icons:arcgis",
         "simple-icons:microsoftazure",
         "ri:linkedin-line",
-        "ri:github-line"
+        "ri:github-line",
+        'simple-line-icons:map',
+        'imple-icons:zigbee',
+        'simple-line-icons:rocket'
       ],
       scan: true,
       includeCustomCollections: true,

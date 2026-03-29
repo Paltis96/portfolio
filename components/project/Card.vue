@@ -1,44 +1,50 @@
 <template>
-  <div
-    class="relative flex rounded-lg bg-elevated/50 ring ring-default overflow-hidden"
-  >
-    <div
-      class="relative flex flex-col flex-1 lg:grid gap-x-8 gap-y-4 p-0 sm:p-0"
-    >
-      <div class="flex flex-col flex-1 items-start">
-        <NuxtImg class="lg:h-[350px] object-cover" width="600" height="400" densities="x1" :src="data.img" loading="lazy"  />
-        <div class="min-w-0 flex-1 flex flex-col p-4 sm:p-6">
-          <div class="flex items-center gap-2 mb-2">
-            <UBadge v-for="(t, idx) in data.tags" :key="idx" variant="subtle">{{ t }}</UBadge>
-          </div>
-          <h2 class="text-xl text-pretty font-semibold text-highlighted">
-            {{ data.title }}
-          </h2>
-          <UButtonGroup
-            size="lg"
-            class="relative inline-flex -space-x-px w-full mt-auto pt-4"
-          >
-            <UButton
-              v-if="data.demo ? true : false"
-              block
-              :href="data.demo"
-              target="_blank"
-              icon="lucide:laptop"
-              variant="subtle"
-              label="Demo"
-            />
-            <UButton
-              v-if="data.source ? true : false"
-              block
-              :href="data.source"
-              target="_blank"
-              icon="lucide:github"
-              color="neutral"
-              variant="subtle"
-              label="Source"
-            />
-          </UButtonGroup>
+  <div class="relative flex rounded-lg bg-elevated/50 ring ring-default overflow-hidden">
+    <div class="relative flex flex-col flex-1">
+      <div class="relative w-full aspect-video overflow-hidden"> 
+        <NuxtImg 
+          :src="data.img" 
+          class="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+          alt="Card image"
+        />
+      </div>
+
+      <div class="flex flex-col flex-1 p-4 sm:p-6">
+        <div class="flex items-center gap-2 mb-2">
+          <UBadge v-for="(t, idx) in data.tags" :key="idx" variant="subtle">
+            {{ t }}
+          </UBadge>
         </div>
+        
+        <h2 class="text-xl text-pretty font-semibold text-highlighted mb-4">
+          {{ data.title }}
+        </h2>
+
+        <UButtonGroup
+          size="lg"
+          class="relative inline-flex -space-x-px w-full mt-auto"
+        >
+          <UButton
+            v-if="data.demo"
+            block
+            :href="data.demo"
+            target="_blank"
+            icon="lucide:laptop"
+            variant="subtle"
+            label="Demo"
+          />
+          <UButton
+            v-if="data.source"
+            block
+            :href="data.source"
+            target="_blank"
+            icon="lucide:github"
+            color="neutral"
+            variant="subtle"
+            label="Source"
+          />
+        </UButtonGroup>
       </div>
     </div>
   </div>

@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
   }, icon: {
     serverBundle: {
-      collections: ['lucide', 'ri', 'simple-icons', "circle-flags"]
+      collections: ['lucide', 'ri', 'simple-icons', "circle-flags",'simple-line-icons']
     },
     clientBundle: {
       icons: [
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         "ri:linkedin-line",
         "ri:github-line",
         'simple-line-icons:map',
-        'imple-icons:zigbee',
+        'simple-icons:zigbee',
         'simple-line-icons:rocket'
       ],
       scan: true,

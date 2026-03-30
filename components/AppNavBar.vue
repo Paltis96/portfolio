@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import cv from "~/public/files/D. Kovshun CV.pdf";
+const cv = '/files/D_Kovshun_CV.pdf';
 const { t } = useI18n();
 const localePath = useLocalePath();
 const navigation = computed(() => [

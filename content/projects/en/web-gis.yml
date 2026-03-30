@@ -2,6 +2,4 @@ title: "Powerful platform for analyzing spatial data in the browser"
 img: "/thumbnail-images/web-gis.png"
 demo: "https://dev-maps-f0cff.web.app/"
 source: ""
-tags:
-  - "PoC"
-  - "GIS"
+tag: "GIS"

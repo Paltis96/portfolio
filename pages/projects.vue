@@ -16,31 +16,45 @@
           </div> -->
       </div>
       <div class="flex md:max-w-l gap-4 justify-center">
-        <UButton color="neutral" variant="outline"> All</UButton>
+        <UButton
+          :color="!selectedTag ? 'primary' : 'neutral'"
+          variant="outline"
+          @click="cleanTag"
+        >
+          All</UButton
+        >
         <div v-for="(item, index) in tags" :key="index">
-          <UButton color="neutral" variant="outline">
-            <leadeng>
-              <UIcon
-                class="mr-2 flex align-middle justify-center"
-                :name="item.icon"
-              />
-            </leadeng>
+          <UButton
+            :color="selectedTag === item.name ? 'primary' : 'neutral'"
+            variant="outline"
+            @click="setTag(item.name)"
+          >
+            <UIcon
+              class="mr-2 flex align-middle justify-center"
+              :name="item.icon"
+            />
             {{ item.name }}</UButton
           >
         </div>
       </div>
     </div>
-    <SectionWrapper><ProjectItemList /></SectionWrapper>
+    <SectionWrapper><ProjectItemList :tag="selectedTag" /></SectionWrapper>
   </div>
 </template>
 
 <script setup lang="ts">
+const selectedTag: Ref<string | undefined> = ref(undefined);
 const tags = ref([
   { name: "GIS", icon: "simple-line-icons-map" },
   { name: "IoT", icon: "simple-icons-zigbee" },
-  { name: "PoC", icon: "simple-line-icons-rocket" },
 ]);
 
+const cleanTag = () => {
+  selectedTag.value = undefined;
+};
+const setTag = (tag: string) => {
+  selectedTag.value = tag;
+};
 useHead({
   title: "Portfolio: Projects",
 });

@@ -12,8 +12,8 @@
 
       <div class="flex flex-col flex-1 p-4 sm:p-6">
         <div class="flex items-center gap-2 mb-2">
-          <UBadge v-for="(t, idx) in data.tags" :key="idx" variant="subtle">
-            {{ t }}
+          <UBadge  variant="subtle">
+            {{ data.tag }}
           </UBadge>
         </div>
         

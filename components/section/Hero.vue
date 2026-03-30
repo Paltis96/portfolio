@@ -8,10 +8,12 @@
             src="/avatar.png"
             sizes="100"
             class="size-16 lg:size-25 rounded-full shadow-xl bg-elevated border border-default/50"
+            as="image"
+            preload
           />
           <div class="relative">
             <div
-              class="bg-[var(--ui-bg)]/50 absolute top-0 left-0 w-full h-full z-0 blur-xl"
+              class="bg-(--ui-bg)/50 absolute top-0 left-0 w-full h-full z-0 blur-xl"
             />
             <h3 class="text-highlighted relative font-bold text-xl mb-1">
               {{ $t("hero.name") }}
@@ -59,5 +61,5 @@
 </template>
 
 <script setup>
-import cv from "../public/files/D. Kovshun CV.pdf";
+const cv = '/files/D_Kovshun_CV.pdf';
 </script>

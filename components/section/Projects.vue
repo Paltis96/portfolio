@@ -1,6 +1,6 @@
 <template>
   <SectionWrapper :title="$t('section.projects')">
-    <ProjectItemList :limit="3" />
+    <ProjectItemList  :limit="3" />
     <UButton
       trailing-icon="lucide:arrow-right"
       class="mt-12"

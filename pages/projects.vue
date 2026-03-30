@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <SectionWrapper><ProjectItemList :tag="selectedTag" /></SectionWrapper>
+    <SectionWrapper><ProjectItemList  :tag="selectedTag"/></SectionWrapper>
   </div>
 </template>
 

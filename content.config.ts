@@ -6,8 +6,8 @@ const schema = z.object({
   tag: z.string(),
   source: z.string(),
   demo: z.string(),
-  img: z.string()
-
+  img: z.string(),
+  date: z.date(), 
 })
 
 

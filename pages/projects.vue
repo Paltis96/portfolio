@@ -11,9 +11,9 @@
         >
           {{ $t("project.title") }}
         </h1>
-        <!-- <div class="text-lg sm:text-xl/8 text-muted text-balance mt-6">
+       <div class="text-lg sm:text-xl/8 text-muted text-balance mt-6">
             {{ $t("project.subtitle") }}
-          </div> -->
+          </div>
       </div>
       <div class="flex md:max-w-l gap-4 justify-center">
         <UButton

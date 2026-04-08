@@ -46,7 +46,7 @@
 const selectedTag: Ref<string | undefined> = ref(undefined);
 const tags = ref([
   { name: "GIS", icon: "simple-line-icons-map" },
-  { name: "Embedded", icon: "simple-icons-zigbee" },
+  { name: "Hobby", icon: "simple-line-icons-rocket" },
 ]);
 
 const cleanTag = () => {

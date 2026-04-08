@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         "ri:linkedin-line",
         "ri:github-line",
         'simple-line-icons:map',
-        'simple-icons:zigbee',
+        'simple-line-icons:star',
         'simple-line-icons:rocket'
       ],
       scan: true,

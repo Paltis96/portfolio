@@ -1,75 +1,24 @@
-# Nuxt Minimal Starter
+# Portfolio — Denys Kovshun
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal portfolio (Nuxt 4 + Nuxt UI + Nuxt Content), EN/UK.
 
-## Setup
-
-Make sure to install dependencies:
+## Develop
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## Build
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+npm run build     # server output (.output)
+npm run generate  # static output (.output/public)
 ```
 
-Locally preview production build:
+## Structure
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- `content/projects/{en,uk}/*.yml` — project entries, one file per project per locale
+- `i18n/locales/*.json` — UI strings, work history, education
+- `components/section/*` — homepage sections
+- `public/` — source images; Nuxt Image generates resized/webp variants at build

@@ -2,11 +2,16 @@
   <div class="relative flex rounded-lg bg-elevated/50 ring ring-default overflow-hidden">
     <div class="relative flex flex-col flex-1">
       <div class="relative w-full aspect-video overflow-hidden"> 
-        <NuxtImg 
-          :src="data.img" 
-          class="absolute inset-0 w-full h-full object-cover"
+        <NuxtImg
+          :src="data.img"
+          :alt="data.title"
+          format="webp"
+          width="400"
+          height="225"
+          sizes="sm:100vw md:50vw lg:400px"
           loading="lazy"
-          alt="Card image"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover"
         />
       </div>
 
@@ -61,5 +66,3 @@ interface Card {
 }
 defineProps<{ data: Card }>();
 </script>
-
-<style scoped></style>

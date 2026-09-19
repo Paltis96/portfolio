@@ -3,19 +3,26 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Portfolio',
-      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      viewport: 'width=device-width, initial-scale=1',
     }
   },
   compatibilityDate: '2025-05-15',
+  site: {
+    url: 'https://dkov.xyz',
+    name: 'Denys Kovshun — Fullstack GIS developer',
+  },
+  image: {
+    // sources live in assets/ so the originals are never served or deployed
+    dir: 'assets/images',
+  },
   devtools: { enabled: true },
   modules: [
     '@nuxt/icon',
     '@nuxt/ui',
     '@nuxt/image',
     '@nuxt/eslint',
-    'nuxt-icons',
-    '@nuxtjs/i18n',
     'nuxt-aos',
+    '@nuxtjs/i18n',
     '@nuxt/content',
     "@nuxtjs/robots",
     "@nuxtjs/sitemap"
@@ -29,9 +36,10 @@ export default defineNuxtConfig({
       optimizeTranslationDirective: false,
     },
     defaultLocale: 'en',
+    baseUrl: 'https://dkov.xyz',
   }, icon: {
     serverBundle: {
-      collections: ['lucide', 'ri', 'simple-icons', "circle-flags",'simple-line-icons']
+      collections: ['lucide', 'ri', 'simple-icons', 'circle-flags', 'simple-line-icons']
     },
     clientBundle: {
       icons: [
@@ -62,8 +70,10 @@ export default defineNuxtConfig({
         "ri:linkedin-line",
         "ri:github-line",
         'simple-line-icons:map',
-        'simple-line-icons:star',
-        'simple-line-icons:rocket'
+        'simple-line-icons:rocket',
+        'lucide:laptop',
+        'lucide:github',
+        'lucide:languages'
       ],
       scan: true,
       includeCustomCollections: true,

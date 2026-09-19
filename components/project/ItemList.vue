@@ -3,7 +3,7 @@
     v-if="projects?.length"
     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
   >
-    <ProjectCard v-for="(item) in projects" :key="item.source" :data="item" />
+    <ProjectCard v-for="item in projects" :key="item.id" :data="item" />
   </div>
 </template>
 
@@ -18,17 +18,17 @@ const key = computed(() =>
 const { data: projects } = await useAsyncData(
   key,
   async () => {
-    let query = queryCollection(`projects_${localeProperties.value.code}`)
-
-    if (props.limit) {
-      query = query.limit(props.limit).order('date', 'DESC')
-    }
+    let query = queryCollection(`projects_${localeProperties.value.code}`).order('date', 'DESC')
 
     if (props.tag) {
-      query = query.where("tag", "=", props.tag).order('date', 'DESC')
+      query = query.where('tag', '=', props.tag)
     }
 
-    return query.order('date', 'DESC').all()
+    if (props.limit) {
+      query = query.limit(props.limit)
+    }
+
+    return query.all()
   }
 )
 

@@ -18,13 +18,13 @@
   },
   "tabs-experience": {
     "work": "Досвід роботи",
-    "educarion": "Освіта"
+    "education": "Освіта"
   },
   "project": {
     "title": "Проєкти",
     "subtitle": "Збірка демо-версій, проектів-хобі та загальнодоступних проектів."
   },
-  "educarion": [
+  "education": [
     {
       "title": "НУБіП України",
       "description": "Право",

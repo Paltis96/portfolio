@@ -15,9 +15,9 @@
           </UTimeline>
         </div>
       </template>
-      <template #educarion>
+      <template #education>
         <div class="p-4 bg-elevated/50 ring ring-default rounded-lg">
-          <UTimeline :items="educarion" class="w-full mt-2" />
+          <UTimeline :items="education" class="w-full mt-2" />
         </div>
       </template>
     </UTabs>
@@ -33,8 +33,8 @@ const items = ref<TabsItem[]>([
     slot: "work" as const,
   },
   {
-    label: t("tabs-experience.educarion"),
-    slot: "educarion" as const,
+    label: t("tabs-experience.education"),
+    slot: "education" as const,
   },
 ]);
 
@@ -49,8 +49,8 @@ const work = computed(() =>
   })
 );
 
-const educarion = computed(() =>
-  tm("educarion").map((x) => {
+const education = computed(() =>
+  tm("education").map((x) => {
     return {
       title: rt(x.title),
       description: rt(x.description),

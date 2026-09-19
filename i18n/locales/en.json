@@ -18,13 +18,13 @@
   },
   "tabs-experience": {
     "work": "Work",
-    "educarion": "Education"
+    "education": "Education"
   },
   "project": {
     "title": "Projects",
     "subtitle": "A collection of demos, hobby builds, and public projects."
   },
-   "educarion": [
+   "education": [
     {
       "title": "National University of Life and Environmental Sciences of Ukraine",
       "description": "Law",

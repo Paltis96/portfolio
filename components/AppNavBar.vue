@@ -42,5 +42,3 @@ const navigation = computed(() => [
   { name: t("navigation.projects"), to: "projects" },
 ]);
 </script>
-
-<style lang="scss" scoped></style>

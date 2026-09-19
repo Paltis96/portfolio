@@ -1,15 +1,17 @@
 <template>
   <div class="max-sm:w-full max-sm:h-screen">
-    <HerroBgCarusel />
+    <HeroBgCarousel />
     <div class="relative isolate px-6 lg:px-8">
       <div class="mx-auto max-w-2xl py-18 lg:py-48">
         <div class="flex items-center justify-center lg:mt-0 gap-4">
           <NuxtImg
             src="/avatar.png"
-            sizes="100"
-            class="size-16 lg:size-25 rounded-full shadow-xl bg-elevated border border-default/50"
-            as="image"
+            alt=""
+            format="webp"
+            width="100"
+            height="100"
             preload
+            class="size-16 lg:size-25 rounded-full shadow-xl bg-elevated border border-default/50"
           />
           <div class="relative">
             <div

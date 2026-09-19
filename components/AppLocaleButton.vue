@@ -16,7 +16,7 @@
           :icon="'circle-flags:lang-' + locale.code"
           :color="locale.code == curLocale ? 'primary' : 'neutral'"
           :variant="locale.code == curLocale ? 'soft' : 'ghost'"
-          @click="swichLocale(locale.code)"
+          @click="switchLocale(locale.code)"
         />
       </UButtonGroup>
     </template>
@@ -27,7 +27,7 @@
 const { locales, setLocale, localeProperties } = useI18n();
 const open = ref(false);
 
-function swichLocale(code: "en" | "uk") {
+function switchLocale(code: "en" | "uk") {
   setLocale(code);
   open.value = !open.value;
 }

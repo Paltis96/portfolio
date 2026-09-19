@@ -2,7 +2,6 @@ import { defineContentConfig, defineCollection, z } from '@nuxt/content'
 
 const schema = z.object({
   title: z.string(),
-  descriptionn: z.string(),
   tag: z.string(),
   source: z.string(),
   demo: z.string(),

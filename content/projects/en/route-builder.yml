@@ -1,6 +1,6 @@
-title: "Valhalla-based route planner"
+title: "Web route planner built on the Valhalla engine"
 img: "/thumbnail-images/route-builder.png"
 demo: ""
 source: "https://github.com/Paltis96/routing-app"
 tag: "GIS"
-date: 2019-01-02
+date: 2022-12-28

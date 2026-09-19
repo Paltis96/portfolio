@@ -6,6 +6,8 @@
           :src="data.img"
           :alt="data.title"
           format="webp"
+          fit="cover"
+          quality="92"
           width="400"
           height="225"
           sizes="sm:100vw md:50vw lg:400px"
@@ -17,9 +19,12 @@
 
       <div class="flex flex-col flex-1 p-4 sm:p-6">
         <div class="flex items-center gap-2 mb-2">
-          <UBadge  variant="subtle">
+          <UBadge variant="subtle">
             {{ data.tag }}
           </UBadge>
+          <span v-if="formattedDate" class="text-sm text-muted">
+            {{ formattedDate }}
+          </span>
         </div>
         
         <h2 class="text-xl text-pretty font-semibold text-highlighted mb-4">
@@ -59,10 +64,24 @@
 interface Card {
   title: string;
   img: string;
-  date?: string;
-  tags?: string[];
+  date?: string | Date;
+  tag?: string;
   source?: string;
   demo?: string;
 }
-defineProps<{ data: Card }>();
+
+const props = defineProps<{ data: Card }>();
+const { locale } = useI18n();
+
+const formattedDate = computed(() => {
+  if (!props.data.date) return "";
+  const d = new Date(props.data.date);
+  if (Number.isNaN(d.getTime())) return "";
+  // formatToParts drops the locale's era/literal suffix (uk renders "бер. 2026 р.")
+  return new Intl.DateTimeFormat(locale.value, { month: "short", year: "numeric" })
+    .formatToParts(d)
+    .filter((part) => part.type === "month" || part.type === "year")
+    .map((part) => part.value)
+    .join(" ");
+});
 </script>

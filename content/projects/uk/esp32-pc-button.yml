@@ -1,5 +1,5 @@
-title: "Розумна кнопка живлення з функцією автоматичного вмикання"
+title: "Розумна кнопка живлення на ESP32 з автоматичним вмиканням"
 img: "/thumbnail-images/smart-switch-web-ui.png"
 tag: "Hobby"
 source: "https://github.com/Paltis96/esp32-smart-pc-button"
-date: 2026-01-01
+date: 2026-03-19

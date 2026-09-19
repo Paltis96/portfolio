@@ -8,8 +8,9 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
 useHead({
-  title: 'Portfolio: Home',
+  title: () => t('navigation.home'),
 })
 
 </script>

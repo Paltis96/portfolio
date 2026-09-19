@@ -25,7 +25,8 @@ const { data: projects } = await useAsyncData(
     }
 
     if (props.limit) {
-      query = query.limit(props.limit)
+      // homepage teaser: professional work only, hobby projects stay on /projects
+      query = query.where('tag', '<>', 'Hobby').limit(props.limit)
     }
 
     return query.all()

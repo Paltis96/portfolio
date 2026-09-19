@@ -8,6 +8,9 @@
             src="/avatar.png"
             alt=""
             format="webp"
+            fit="cover"
+            quality="95"
+            densities="2 3"
             width="100"
             height="100"
             preload

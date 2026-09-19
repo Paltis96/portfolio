@@ -11,10 +11,6 @@ export default defineNuxtConfig({
     url: 'https://dkov.xyz',
     name: 'Denys Kovshun — Fullstack GIS developer',
   },
-  image: {
-    // sources live in assets/ so the originals are never served or deployed
-    dir: 'assets/images',
-  },
   devtools: { enabled: true },
   modules: [
     '@nuxt/icon',
@@ -30,8 +26,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   i18n: {
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'uk', name: 'Ukrainian', file: 'uk.json' }
+      { code: 'en', name: 'English', language: 'en', file: 'en.json' },
+      { code: 'uk', name: 'Ukrainian', language: 'uk', file: 'uk.json' }
     ], bundle: {
       optimizeTranslationDirective: false,
     },

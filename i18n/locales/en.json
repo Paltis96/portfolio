@@ -8,7 +8,7 @@
     "name": "Denys Kovshun",
     "location": "Kyiv region, Ukraine",
     "title": "Fullstack GIS developer",
-    "subtitle": "Skilled in building ELT pipelines for large-scale geospatial data, optimizing spatial databases, and developing web-based GIS applications that drive decision-making and operational efficiency."
+    "subtitle": "Six years building spatial systems end to end, across real estate data, EV charging analytics, agricultural robotics and oil services. Previously four years in survey engineering."
   },
   "open-work": "Open to work",
   "section": {
@@ -24,7 +24,7 @@
     "title": "Projects",
     "subtitle": "A collection of demos, hobby builds, and public projects."
   },
-   "education": [
+  "education": [
     {
       "title": "National University of Life and Environmental Sciences of Ukraine",
       "description": "Law",
@@ -37,71 +37,78 @@
     }
   ],
   "work": [
-        {
-      "title": "Front-end GIS Developer – Luxoft",
+    {
+      "title": "Freelance GIS Developer – JetSoftPro",
+      "date": "Nov 2025 – Present",
+      "avatar": "/work-avatars/jsp.jpeg",
+      "descriptions": [
+        "Extending the precision agriculture GIS system delivered under the original engagement, across the editor, processing pipelines and route planning.",
+        "Integrating live GPS telemetry from the field machines into the mapping interface for real-time tracking.",
+        "Building analytical heatmaps derived from drone sensor data."
+      ]
+    },
+    {
+      "title": "GIS Developer – Luxoft",
       "date": "Nov 2025 – Present",
       "descriptions": [
-        "Developed interactive web mapping applications using React and Open Layers.",
-        "Implemented responsive design principles to ensure optimal user experience across devices.",
-        "Collaborated with back-end developers to integrate GIS services and APIs."
+        "Designed, implemented and deployed an in-house tile server for large asset datasets in the energy sector.",
+        "Built shared mapping tools used by other teams as the basis for their own products, spanning frontend components and backend services.",
+        "Set requirements and technical direction directly with the client, including geoprocessing and infrastructure planning."
       ],
       "avatar": "/work-avatars/luxoft_logo.jpeg"
-      
     },
     {
       "title": "Full Stack GIS Developer – JetSoftPro",
-      "date": "Jan-2025 – Nov 2025",
+      "date": "Jan 2025 – Nov 2025",
       "descriptions": [
-        "Automated cultivation and maintenance workflows for agricultural fields.",
-        "Designed and developed web-based mapping tools for field management and route optimization.",
-        "Built a custom vector tiles generation and management service to support scalable map rendering."
+        "Designed and built the complete GIS stack for the client: editor interface, processing pipelines, route planning and validation.",
+        "Developed route planning and control for autonomous tractors operating between crop rows, including validation of field data prior to machine operation.",
+        "Built a custom pipeline serving high-resolution imagery into the frontend, so end users could lay out machine tracks directly on it."
       ],
       "avatar": "/work-avatars/jsp.jpeg"
-      
     },
     {
-      "title": "GIS Analyst – Zoniq",
+      "title": "GIS Developer / Analyst – Zoniq",
       "date": "Nov 2023 – Nov 2024",
       "descriptions": [
-        "Developed analytic solutions to identify profitable EV charger locations.Led geospatial data collection and ELT pipeline development.",
-        "Built scouting and site evaluation algorithms for EV infrastructure planning.",
-        "Optimized infrastructure and services for enhanced data processing efficiency."
+        "Refined the existing site scoring models and developed new infrastructure and grid impact analysis, including its data pipeline.",
+        "Developed an algorithm for charger placement planning at national market scale, optimized for profitability.",
+        "Narrowed analysis areas to cut compute waste across the evaluation pipeline."
       ],
-      "avatar":  "/work-avatars/zoniq.jpeg"
-      
+      "avatar": "/work-avatars/zoniq.jpeg"
     },
     {
       "title": "Backend GIS Developer – Jito",
       "date": "Nov 2022 – Nov 2023",
       "descriptions": [
-        "Worked with global property databases using machine vision and deep learning.",
-        "Designed ELT pipelines and optimized geospatial databases.",
-        "Developed services for high-volume geospatial data processing and web app prototypes."
+        "Optimized pipelines and spatial queries for a nationwide US property database of over 180 million properties carrying 60+ attributes each.",
+        "Delivered data at scale to deep learning models extracting building and roof attributes from multi-year aerial imagery.",
+        "Built the services handling high-volume geospatial processing, and the web application prototypes on top of them."
       ],
-      "avatar":"/work-avatars/jito.jpeg"
-      
+      "avatar": "/work-avatars/jito.jpeg"
     },
     {
       "title": "Full Stack GIS Developer – Upwork",
       "date": "Jul 2022 – Nov 2022",
       "descriptions": [
-        "Interfaced with clients to estimate tasks and select technologies.",
-        "Developed serverless web GIS, routing services, and desktop GIS apps.",
-        "Integrated geospatial tools into existing client platforms."
+        "Scoped and estimated work directly with clients and selected the technology stack for each engagement.",
+        "Developed serverless web GIS, routing services and desktop GIS applications.",
+        "Integrated geospatial tooling into existing client platforms."
       ],
       "avatar": "/work-avatars/upwork.jpeg"
-      
     },
     {
       "title": "GIS Analyst / Developer – M4U Estate",
       "date": "Nov 2020 – Nov 2022",
       "descriptions": [
-        "Delivered spatial analytics for real estate development and sales.",
-        "Built and maintained geospatial databases and ELT pipelines.",
-        "Developed network analysis tools and interactive web maps for client insights."
+        "Built the spatial data pipelines covering Ukraine and the geodatabases underlying them.",
+        "Developed network analysis tools and interactive maps used by the development and sales teams.",
+        "Delivered the spatial analytics behind real estate development and sales decisions."
       ],
-      "avatar":"/work-avatars/m4u.jpeg"
-      
+      "avatar": "/work-avatars/m4u.jpeg"
     }
-  ]
+  ],
+  "seo": {
+    "description": "GIS developer, six years across spatial data pipelines, web mapping and full-stack applications for real estate, EV charging, agriculture and energy."
+  }
 }

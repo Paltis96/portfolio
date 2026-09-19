@@ -43,6 +43,7 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
 const selectedTag: Ref<string | undefined> = ref(undefined);
 const tags = ref([
   { name: "GIS", icon: "simple-line-icons-map" },
@@ -56,6 +57,11 @@ const setTag = (tag: string) => {
   selectedTag.value = tag;
 };
 useHead({
-  title: "Portfolio: Projects",
+  title: t("project.title"),
+});
+useSeoMeta({
+  description: () => t("project.subtitle"),
+  ogTitle: () => `${t("project.title")} | ${t("hero.name")}`,
+  ogDescription: () => t("project.subtitle"),
 });
 </script>

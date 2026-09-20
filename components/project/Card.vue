@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex rounded-lg bg-elevated/50 ring ring-default overflow-hidden">
     <div class="relative flex flex-col flex-1">
-      <div class="relative w-full aspect-video overflow-hidden"> 
+      <div ref="thumb" class="relative w-full aspect-video overflow-hidden">
         <NuxtImg
           :src="data.img"
           :alt="data.title"
@@ -10,10 +10,11 @@
           quality="92"
           width="400"
           height="225"
-          sizes="sm:100vw md:50vw lg:400px"
+          sizes="sm:100vw md:50vw lg:310px xl:395px 2xl:480px"
+          densities="2"
           loading="lazy"
           decoding="async"
-          class="absolute inset-0 w-full h-full object-cover"
+          class="img-reveal absolute inset-0 w-full h-full object-cover"
         />
       </div>
 
@@ -71,6 +72,8 @@ interface Card {
 }
 
 const props = defineProps<{ data: Card }>();
+const thumb = ref<HTMLElement | null>(null);
+useImageReveal(thumb);
 const { locale } = useI18n();
 
 const formattedDate = computed(() => {

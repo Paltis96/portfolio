@@ -10,3 +10,19 @@ body,
 #__nuxt {
   height: 100%;
 }
+
+/* images start blurred and sharpen once loaded (see composables/useImageReveal.ts) */
+.img-reveal {
+  filter: blur(14px);
+  opacity: 0;
+  transition: filter 0.6s ease, opacity 0.6s ease;
+}
+.img-reveal[data-loaded] {
+  filter: blur(0);
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .img-reveal {
+    transition: none;
+  }
+}

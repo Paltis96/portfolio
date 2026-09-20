@@ -5,6 +5,11 @@
     data-aos-once="true"
     class="absolute container isolate md:top-15 left-1/2 -translate-x-1/2 inset-x-0 overflow-hidden z-0"
   >
+    <div
+      ref="tiles"
+      class="transition-opacity duration-700"
+      :class="ready ? 'opacity-100' : 'opacity-0'"
+    >
     <InfiniteSlideBar class="flex pt-4">
       <div class="flex justify-between">
         <div
@@ -25,7 +30,7 @@
             sizes="86px md:156px"
             loading="lazy"
             decoding="async"
-            class="h-full w-full rounded-[inherit] object-cover"
+            class="img-reveal h-full w-full rounded-[inherit] object-cover"
           />
         </div>
       </div>
@@ -50,11 +55,12 @@
             sizes="86px md:156px"
             loading="lazy"
             decoding="async"
-            class="h-full w-full rounded-[inherit] object-cover"
+            class="img-reveal h-full w-full rounded-[inherit] object-cover"
           />
         </div>
       </div>
     </InfiniteSlideBar>
+    </div>
     <div
       class="absolute left-0 top-0 h-[1000px] w-1/2 z-10 bg-linear-to-bl from-default/0 to-default to-50%"
     />
@@ -66,3 +72,8 @@
     />
   </div>
 </template>
+
+<script setup lang="ts">
+const tiles = ref<HTMLElement | null>(null);
+const { ready } = useImageReveal(tiles);
+</script>
